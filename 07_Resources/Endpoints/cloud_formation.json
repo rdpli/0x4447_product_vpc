@@ -1,0 +1,16 @@
+{
+	"VPCEndpointCloudFormation": {
+		"Type": "AWS::EC2::VPCEndpoint",
+		"Properties": {
+			"VpcId": { "Ref": "VPC" },
+			"ServiceName": { "Fn::Sub": "com.amazonaws.${AWS::Region}.cloudformation"},
+			"VpcEndpointType": "Interface",
+			"PrivateDnsEnabled": true,
+			"SecurityGroupIds": [ { "Ref": "VPCEndpointSecurityGroup" } ],
+			"SubnetIds": [
+				{ "Ref": "VPCSubnetsAPrivate" },
+				{ "Ref": "VPCSubnetsBPrivate" }
+			]
+		}
+	}
+}

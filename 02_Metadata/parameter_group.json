@@ -1,0 +1,8 @@
+{
+    "AWS::CloudFormation::Interface" : {
+        "ParameterLabels": {
+            "ElasticIPParam": { "default" : "Elastic IP" },
+            "DeploymentNameParam": { "default" : "Deployment Name" }
+        }
+    }
+}

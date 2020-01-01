@@ -1,0 +1,10 @@
+{
+	"VPCRouteTableNatGatewayRoute": {
+		"Type" : "AWS::EC2::Route",
+		"Properties" : {
+			"DestinationCidrBlock" : "0.0.0.0/0",
+			"NatGatewayId" : { "Ref": "VPCNatGateway" },
+			"RouteTableId" : { "Ref": "VPCRouteTableNatGateway"}
+		}
+	}
+}

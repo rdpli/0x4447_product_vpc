@@ -1,0 +1,6 @@
+{
+	"OutputVPCCidrBlock": {
+		"Description": "The VPC Cidr Block",
+		"Value": { "Fn::GetAtt": ["VPC", "CidrBlock"] }
+	}
+}

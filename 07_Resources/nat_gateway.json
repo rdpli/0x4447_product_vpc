@@ -1,0 +1,15 @@
+{
+	"VPCNatGateway": {
+		"Type" : "AWS::EC2::NatGateway",
+		"Properties" : {
+			"AllocationId" : { "Ref": "ElasticIPParam" },
+			"SubnetId" : { "Ref": "VPCSubnetsAPublic" },
+			"Tags": [
+				{
+					"Key" : "Name",
+					"Value" : { "Fn::Sub": "${DeploymentNameParam}" }
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"VPCRouteTableNatGatewayIGSubnetA": {
+		"Type": "AWS::EC2::SubnetRouteTableAssociation",
+		"Properties": {
+			"RouteTableId": { "Ref": "VPCRouteTableInternetGateway" },
+			"SubnetId": { "Ref": "VPCSubnetsAPublic" }
+		}
+	}
+}

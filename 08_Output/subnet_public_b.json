@@ -1,0 +1,6 @@
+{
+	"OutputVPCSubnetsBPublic": {
+		"Description": "Subnet Public B.",
+		"Value": { "Ref": "VPCSubnetsBPublic" }
+	}
+}

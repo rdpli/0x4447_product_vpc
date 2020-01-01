@@ -1,0 +1,6 @@
+{
+	"ElasticIPParam" : {
+		"Description": "The elastic IP ID for the NAT Gateway.",
+		"Type": "String"
+	}
+}

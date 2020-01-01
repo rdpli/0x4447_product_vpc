@@ -1,0 +1,16 @@
+{
+	"VPCSubnetsAPrivate": {
+		"Type" : "AWS::EC2::Subnet",
+		"Properties" : {
+			"CidrBlock" : "10.0.0.0/24",
+			"VpcId" : { "Ref": "VPC" },
+			"AvailabilityZone": { "Fn::Sub": "${AWS::Region}a" },
+			"Tags": [
+				{
+					"Key" : "Name",
+					"Value" : { "Fn::Sub": "${DeploymentNameParam} - Private A" }
+				}
+			]
+		}
+	}
+}

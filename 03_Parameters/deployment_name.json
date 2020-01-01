@@ -1,0 +1,6 @@
+{
+	"DeploymentNameParam": {
+		"Description": "The name of the deployment you are creating, to be used in tags to identify resources.",
+		"Type": "String"
+	}
+}

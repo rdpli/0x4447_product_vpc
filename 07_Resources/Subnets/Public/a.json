@@ -1,0 +1,17 @@
+{
+	"VPCSubnetsAPublic": {
+		"Type" : "AWS::EC2::Subnet",
+		"Properties" : {
+			"CidrBlock" : "10.0.2.0/24",
+			"VpcId" : { "Ref": "VPC" },
+			"MapPublicIpOnLaunch": true,
+			"AvailabilityZone": { "Fn::Sub": "${AWS::Region}a"},
+			"Tags": [
+				{
+					"Key" : "Name",
+					"Value" : { "Fn::Sub": "${DeploymentNameParam} - Public A" }
+				}
+			]
+		}
+	}
+}

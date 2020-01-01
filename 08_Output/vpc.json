@@ -1,0 +1,6 @@
+{
+	"OutputVPC": {
+		"Description": "The VPC ID",
+		"Value": { "Ref": "VPC" }
+	}
+}
